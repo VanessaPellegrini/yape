@@ -1,4 +1,6 @@
+
 $(document).ready(function(){
+  $('.carousel.carousel-slider').carousel({fullWidth: true});
 	$('#formulario').validate({
         rules: {
             inputPhone: {
@@ -27,3 +29,6 @@ $(document).ready(function(){
         }
     });
 });
+
+
+
