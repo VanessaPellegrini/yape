@@ -1,0 +1,35 @@
+//Comienzo Estilo Inicio
+
+.inicio{
+	.carousel{
+		margin-top: 7em;
+		.carousel-slider{
+			
+		}
+		.carousel-item{
+			img{
+				width: 50%;
+			}
+		}
+
+		.indicators {
+			.indicator-item{
+				height: 1em;
+    			width: 1em;
+    			margin: 0em 4px;
+    			background-color: #f8f8f8;
+
+			}
+			.active{
+				background-color: #f64552;
+			}
+		}
+	}
+
+	.btn {
+		background-color: #fbd43b;
+		left: 27%;
+		text-transform: uppercase;
+		margin-top: 3em;
+	}
+}
