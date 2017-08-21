@@ -1,0 +1,41 @@
+/*PANTALLA 2*/
+.pantalla2{
+	div{
+		div{
+			div{
+				.img-phone{
+					width: 100px;
+					height: 80px;
+					margin-top: 50px;
+					margin-left: 90%;
+				}
+				h3{
+					font-weight: bold;
+					font-size: 18px;
+					margin-bottom: 0px;
+				}
+				p{
+					color: $grisletra;
+					font-size: 12px;
+					padding-left: 20px;
+					margin-top: 0px;
+				}
+				a{
+					margin-left: 50%;
+					background-color: $grisboton;
+					font-weight: bold;
+
+				}
+			}
+			form{
+				margin-bottom: 0px;
+				div{
+					i{
+						color: $grisletra;
+					}
+				}
+			}
+		}
+	}
+}
+/*FIN PANTALLA 2*/
