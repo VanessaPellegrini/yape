@@ -1,39 +1,43 @@
-
 /*PANTALLA 2*/
 .pantalla2{
-	div{
-		div{
+	.pantalla2-caja{
+		.form-text{
 			div{
 				.img-phone{
 					width: 100px;
 					height: 80px;
-					margin-top: 50px;
-					margin-left: 90%;
+					position: relative;
+					top: 50px;
+					margin-bottom:50px;
 				}
 				h3{
 					font-weight: bold;
-					font-size: 18px;
+					font-size: 25px;
 					margin-bottom: 0px;
 				}
-				p{
+				div{
 					color: $grisletra;
 					font-size: 12px;
 					padding-left: 20px;
 					margin-top: 0px;
 				}
 				a{
-					margin-left: 50%;
 					background-color: $grisboton;
 					font-weight: bold;
 
 				}
 			}
-			form{
-				margin-bottom: 0px;
-				div{
-					i{
-						color: $grisletra;
-					}
+		}
+		.formulario-caja{
+			margin:0;
+			.input-field{
+				i{
+					color: $grisletra;
+				}
+			}
+			.checkbox-terms{
+				a{
+					color: #13B890;
 				}
 			}
 		}

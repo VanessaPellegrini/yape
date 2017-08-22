@@ -13,41 +13,42 @@
 </head>
 <body>
 	<section class="pantalla2 center">
-		<div class="container">
-			<div class="row center">
-				<div class="col xs12 center">
+		<div class="container pantalla2-caja">
+			<div class="row center form-text">
+				<div class="col s12 center">
 					<img src="dist/img/icon/phone.png" alt="Phone" class="img-phone responsive-img">
 				</div>
 			</div>
-			<div class="row center">
-				<div class="col xs12 center">
+			<div class="row center form-text">
+				<div class="col s12 center">
 					<h3>Para comenzar validemos tu número</h3>
 				</div>
 			</div>
-			<div class="row center">
-				<div class="col xs12 center">
+			<div class="row center form-text">
+				<div class="col s12 center">
 					<p>Recibirás un SMS con un código de validación</p>
 				</div>
 			</div>
-			<div class="row center">
-			    <form class="col xs12" id="formulario">
-			        <div class="input-field col s12">
-			          	<i class="material-icons prefix">phone_android</i>
-			          	<input id="phone" type="tel" class="validate">
-			          	<label for="icon_telephone">+56 Telephone</label>
-			        </div>
-			        <div class="row center">
-		  				<p class="center">
-					      <input type="checkbox" class="filled-in" id="terms">
-					      <label for="filled-in-box">Acepto <a href="#">Terminos y Condiciones</a></label>
-		    			</p>
-  					</div>
-  					<div class="row">
-		  				<div class="col xs12 center">
-		  					<button type="submit" id="register" disabled="disabled" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom">Continuar &raquo;</button>
-		  				</div>
-  					</div>
-			    </form>
+			<div class="row formulario-caja">
+				<form id="formulario" class="col s12">
+				    <div class="control-group">
+				        <div class="input-field">
+						    <i class="material-icons prefix">phone_android</i>
+				            <input id="phone" type="tel" class="validate" name="phone">
+						    <label for="phone" class="control-label">+56 Telephone</label>
+				        </div>
+				        <div class="row center checkbox-terms">
+				            <input type="checkbox" name="terms" id="terms"/>
+				            <label for="terms">Acepto </label>
+							<a class="term-condi" href="#">Terminos y Condiciones</a>
+				        </div>
+				    </div>
+			  		<div class="row">
+					  	<div class="col s12 center">
+					  		<button type="submit" id="register" disabled="disabled" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom">Continuar &raquo;</button>
+					  	</div>
+			  		</div>
+				</form>
   			</div>
 		</div>
 	</section>

@@ -1,17 +1,23 @@
-$('.carousel.carousel-slider').carousel({fullWidth: true});
 $(document).ready(function(){
-  
-	$('#formulario').validate({
+    /*CAROUSEL PAG 1*/
+    $('.carousel.carousel-slider').carousel({fullWidth: true}); 
+	
+    $('.carousel').carousel();
+    setInterval(function() {
+        $('.carousel').carousel('next');
+    }, 3000); 
+
+    /*VALIDAR CAMPOS PAG 2*/
+    $('#formulario').validate({
         rules: {
-            inputPhone: {
+            phone: {
                 required: true
             },
-            inputCheckbox: {
+            terms: {
                 required: true
             }
         }
     });
-
     $('#formulario input').on('keyup blur', function () {
         if ($('#formulario').valid()) {
         	var elPhone = $('#phone').val();
@@ -28,6 +34,7 @@ $(document).ready(function(){
             $('button#register').prop('disabled', 'disabled');
         }
     });
+
 });
 
 
