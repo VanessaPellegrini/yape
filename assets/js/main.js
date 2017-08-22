@@ -90,12 +90,23 @@ $(document).ready(function(){
             $('#codigo-generado').append('<p>'+res.data+'</p>'); 
         }, 2100);
         */
+
+        $('#codigo').change(function(){
+            if($('#codigo').val() == localStorage.getItem('codigo')){
+                console.log('ok');
+                $('#btn-creado').append('<a class="waves-effect waves-light btn" href="pantalla4.html">ok</a>')
+            }
+            else{
+                alert('Ingrese número valido');
+            }
+        })
     })
     .fail(function(res){
         console.log("error");
         console.log(res);
     })
     
+
 
 });
 
