@@ -73,5 +73,38 @@
 		left: 27%;
 		text-transform: uppercase;
 		margin-top: 3em;
+		a{
+			color: white;
+		}
 	}
 }
+//Fin Estilo Inicio
+
+//Inicio Pantalla 3
+
+.pantalla3{
+	img{
+		width: 50%;
+    	margin-top: 6em;
+    	left: 21%;
+    	position: relative;
+    }
+    h3{
+    	font-size: 2.5rem;
+    }
+    p{
+    	color: #8f8f8f;
+    	span{
+    		color: black;
+    	}
+    }
+    form{
+    	.input-field{
+    		width: 18em;
+    	}
+    	i{
+    		color: #8f8f8f;
+    	}
+    }
+}
+//Fin Pantalla 3
