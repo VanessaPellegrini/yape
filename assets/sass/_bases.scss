@@ -1,7 +1,7 @@
 //Comienzo Estilo Inicio
 .inicio{
 	.carousel{
-		margin-top: 7em;
+		margin: 7em auto;
 		width:80vw;
 		height:350px;
 		.carousel-item{
@@ -16,25 +16,23 @@
     			width: 1em;
     			margin: 0em 4px;
     			background-color: #f8f8f8;
-
 			}
 			.active{
 				background-color: #f64552;
 			}
 		}
 	}
-
 	.btn {
 		background-color: #fbd43b;
 		left: 27%;
 		text-transform: uppercase;
-		margin-top: 3em;
 		a{
 			color: white;
 		}
 	}
 }
 //Fin Estilo Inicio
+
 /*PANTALLA 2*/
 .pantalla2{
 	.pantalla2-caja{
@@ -61,7 +59,6 @@
 				a{
 					background-color: $grisboton;
 					font-weight: bold;
-
 				}
 			}
 		}
@@ -77,6 +74,11 @@
 					color: #13B890;
 				}
 			}
+			button{
+				a{
+					color: #FFF;
+				}
+			}
 		}
 	}
 }
@@ -84,7 +86,6 @@
 
 
 //Inicio Pantalla 3
-
 .pantalla3{
 	img{
 		width: 100px;

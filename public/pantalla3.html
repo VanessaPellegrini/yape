@@ -7,16 +7,16 @@
 	<!-- ICON material -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!--favicon-->
-    <link rel="icon" href="dist/img/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
 	<!--CSS-->
-	<link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
 <body>
 	<section class="pantalla3">
 		<div class="container center-align">
 			<div class="row">
 		 		<div class="col s12">
-		 			<img src="dist/img/icon/message.png">
+		 			<img src="img/icon/message.png">
 		 		</div>
 		 	</div>
 		 	<div class="row">
@@ -26,7 +26,7 @@
 		 	</div>
 		 	<div class="row">
 		 		<div class="col s12">
-		 			<p>Envíamos un SMS con el código de validación al número <span id="number"></span></p>
+		 			<p>Envíamos un SMS con el código de validación al número <span id="number-phone"></span></p>
 		 		</div>
 		 	</div>
 		 	<div class="row">
@@ -39,12 +39,16 @@
 				        </div>
 			    	</form>
 			    	<p>Reintentar en <i class="material-icons prefix">access_time</i> 21</p>
+			    	<div>
+			    		<h6>Tu clave es: </h6>
+			    		<p id="codigo-generado"></p>
+			    	</div>
 		 		</div>
 		 	</div>
 		</div>
 	</section>
 
 	<!--JS-->
-	<script src="dist/js/script.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
