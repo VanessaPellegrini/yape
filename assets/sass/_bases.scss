@@ -1,4 +1,3 @@
-
 /*PANTALLA 2*/
 .pantalla2{
 	div{
@@ -7,22 +6,28 @@
 				.img-phone{
 					width: 100px;
 					height: 80px;
-					margin-top: 50px;
-					margin-left: 90%;
+					position: relative;
+					top: 50px;
+					margin-bottom:50px;
 				}
 				h3{
 					font-weight: bold;
-					font-size: 18px;
+					font-size: 25px;
 					margin-bottom: 0px;
 				}
-				p{
+				div{
 					color: $grisletra;
 					font-size: 12px;
 					padding-left: 20px;
 					margin-top: 0px;
+					label{
+						display: inline-block;
+					}
+					.term-condi{
+						color: #13B890;
+					}
 				}
 				a{
-					margin-left: 50%;
 					background-color: $grisboton;
 					font-weight: bold;
 
