@@ -1,7 +1,7 @@
 /*PANTALLA 2*/
 .pantalla2{
-	div{
-		div{
+	.pantalla2-caja{
+		.form-text{
 			div{
 				.img-phone{
 					width: 100px;
@@ -20,12 +20,6 @@
 					font-size: 12px;
 					padding-left: 20px;
 					margin-top: 0px;
-					label{
-						display: inline-block;
-					}
-					.term-condi{
-						color: #13B890;
-					}
 				}
 				a{
 					background-color: $grisboton;
@@ -33,12 +27,17 @@
 
 				}
 			}
-			form{
-				margin-bottom: 0px;
-				div{
-					i{
-						color: $grisletra;
-					}
+		}
+		.formulario-caja{
+			margin:0;
+			.input-field{
+				i{
+					color: $grisletra;
+				}
+			}
+			.checkbox-terms{
+				a{
+					color: #13B890;
 				}
 			}
 		}

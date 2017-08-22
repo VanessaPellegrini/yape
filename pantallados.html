@@ -13,33 +13,33 @@
 </head>
 <body>
 	<section class="pantalla2 center">
-		<div class="container">
-			<div class="row center">
+		<div class="container pantalla2-caja">
+			<div class="row center form-text">
 				<div class="col s12 center">
 					<img src="dist/img/icon/phone.png" alt="Phone" class="img-phone responsive-img">
 				</div>
 			</div>
-			<div class="row center">
+			<div class="row center form-text">
 				<div class="col s12 center">
 					<h3>Para comenzar validemos tu número</h3>
 				</div>
 			</div>
-			<div class="row center">
+			<div class="row center form-text">
 				<div class="col s12 center">
 					<p>Recibirás un SMS con un código de validación</p>
 				</div>
 			</div>
-			<div class="row center">
-				<form id="formulario">
+			<div class="row formulario-caja">
+				<form id="formulario" class="col s12">
 				    <div class="control-group">
-				        <div class="controls input-field">
+				        <div class="input-field">
 						    <i class="material-icons prefix">phone_android</i>
-				            <input id="phone" type="tel" class="validate">
+				            <input id="phone" type="tel" class="validate" name="phone">
 						    <label for="phone" class="control-label">+56 Telephone</label>
 				        </div>
-				        <div class="row center controls">
-				            <input type="checkbox" name="inputCheckbox" id="terms" />
-				            <label for="filled-in-box">Acepto </label>
+				        <div class="row center checkbox-terms">
+				            <input type="checkbox" name="terms" id="terms"/>
+				            <label for="terms">Acepto </label>
 							<a class="term-condi" href="#">Terminos y Condiciones</a>
 				        </div>
 				    </div>
