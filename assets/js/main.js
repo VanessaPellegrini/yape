@@ -35,6 +35,9 @@ $(document).ready(function(){
         }
     });
 
+    var phone = $('#phone').val();
+    localStorage.setItem('el-phone', phone);
+
 });
 
 

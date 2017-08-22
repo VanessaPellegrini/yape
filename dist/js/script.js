@@ -10252,7 +10252,6 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-
 /*! jQuery Validation Plugin - v1.17.0 - 7/29/2017
  * https://jqueryvalidation.org/
  * Copyright (c) 2017 Jörn Zaefferer; Licensed MIT */
@@ -20257,6 +20256,7 @@ if (jQuery) {
     $.error('Method ' + methodOrOptions + ' does not exist on jQuery.tap-target');
   };
 })(jQuery);
+
 /*!
  * jQuery Validation Plugin v1.17.0
  *
@@ -21858,7 +21858,6 @@ if ( $.ajaxPrefilter ) {
 }
 return $;
 }));
-
 $(document).ready(function(){
     /*CAROUSEL PAG 1*/
     $('.carousel.carousel-slider').carousel({fullWidth: true}); 
@@ -21895,6 +21894,9 @@ $(document).ready(function(){
             $('button#register').prop('disabled', 'disabled');
         }
     });
+
+    var phone = $('#phone').val();
+    localStorage.setItem('el-phone', phone);
 
 });
 

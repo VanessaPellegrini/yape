@@ -1,3 +1,40 @@
+//Comienzo Estilo Inicio
+.inicio{
+	.carousel{
+		margin-top: 7em;
+		width:80vw;
+		height:350px;
+		.carousel-item{
+			img{
+				width: 200px;
+			}
+		}	
+		.indicators{
+			margin-left:50px;
+			.indicator-item{
+				height: 1em;
+    			width: 1em;
+    			margin: 0em 4px;
+    			background-color: #f8f8f8;
+
+			}
+			.active{
+				background-color: #f64552;
+			}
+		}
+	}
+
+	.btn {
+		background-color: #fbd43b;
+		left: 27%;
+		text-transform: uppercase;
+		margin-top: 3em;
+		a{
+			color: white;
+		}
+	}
+}
+//Fin Estilo Inicio
 /*PANTALLA 2*/
 .pantalla2{
 	.pantalla2-caja{
@@ -44,57 +81,22 @@
 	}
 }
 /*FIN PANTALLA 2*/
-//Comienzo Estilo Inicio
 
-.inicio{
-	.carousel{
-		margin-top: 7em;
-		.carousel-slider{
-			
-		}
-		.carousel-item{
-			img{
-				width: 50%;
-			}
-		}
-
-		.indicators {
-			.indicator-item{
-				height: 1em;
-    			width: 1em;
-    			margin: 0em 4px;
-    			background-color: #f8f8f8;
-
-			}
-			.active{
-				background-color: #f64552;
-			}
-		}
-	}
-
-	.btn {
-		background-color: #fbd43b;
-		left: 27%;
-		text-transform: uppercase;
-		margin-top: 3em;
-		a{
-			color: white;
-		}
-	}
-}
-//Fin Estilo Inicio
 
 //Inicio Pantalla 3
 
 .pantalla3{
 	img{
-		width: 50%;
-    	margin-top: 6em;
-    	left: 21%;
-    	position: relative;
+		width: 100px;
+		height: 80px;
+		position: relative;
+		top: 50px;
+		margin-bottom:50px;
     }
     h3{
-    	font-size: 2.5rem;
+		font-weight: bold;
+		font-size: 25px;
+		margin-bottom: 0px;
     }
     p{
     	color: #8f8f8f;
@@ -104,10 +106,12 @@
     }
     form{
     	.input-field{
+    		position:relative;
+    		left:50px;
     		width: 18em;
     	}
     	i{
-    		color: #8f8f8f;
+    		color:$grisletra;
     	}
     }
 }
