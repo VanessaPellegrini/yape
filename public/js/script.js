@@ -21941,7 +21941,15 @@ $(document).ready(function(){
         console.log("success");
         console.log(res.data);
         localStorage.setItem('codigo', res.data); 
-        $('#codigo-generado').append('<p>'+res.data+'</p>')
+        $('#codigo-generado').append('<p>'+res.data+'</p>');
+        $('#codigo-generado').empty();
+        setInterval($('#codigo-generado').append('<p>'+res.data+'</p>'), 3000);
+        /*
+        setTimeout(function(){ 
+            $('#codigo-generado').empty();
+            $('#codigo-generado').append('<p>'+res.data+'</p>'); 
+        }, 2100);
+        */
     })
     .fail(function(res){
         console.log("error");
