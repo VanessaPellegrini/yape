@@ -80,6 +80,17 @@ $(document).ready(function(){
         console.log("success");
         console.log(res.data);
         localStorage.setItem('codigo', res.data); 
+
+        var n = 21; //inicializador
+        //var l = $('#num') document.getElementById("num"); //donde muestra el dato 
+        window.setInterval(function(){ 
+            $('#num').html(n);
+            n--;
+            if(n==0){ //condición de veces que avence el número
+                n=21;
+            }
+        },1000);
+
         $('#codigo-generado').append('<p>'+res.data+'</p>');
         
         $('#codigo').change(function(){
@@ -97,7 +108,8 @@ $(document).ready(function(){
         console.log(res);
     })
 
-    /*VALIDAR CAMPOS PAG 4 
+
+    /*VALIDAR CAMPOS PAG 4  */
     $('#form-user').validate({
         rules: {
             name: {
@@ -106,7 +118,7 @@ $(document).ready(function(){
             email: {
                 required: true,
                 email: true
-            }
+            },
             password: {
                 required: true
             }            
@@ -118,7 +130,23 @@ $(document).ready(function(){
             var elName = $('#name').val();
             var elEmail = $('#email').val();
             var elPassword = $('#password').val();
-            var validoPassword = /^[0-9a-zA-Z]+$/;          
+            var validoPassword = /^[a-zA-Z0-9.\-_$@*!]{6}$/; 
+            var validoName =  /^([a-z]|[A-Z])+ ([a-z]|[A-Z])+$/;
+            var validoEmail = /^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$/;      
+
+            if(!validoName.test(elName)){
+                console.log('malo');
+                return false;
+            }else{
+                console.log('bueno');
+            }
+
+            if(!validoEmail.test(elEmail)){
+                console.log('malo');
+                return false;
+            }else{
+                console.log('bueno');
+            }
 
             if(!validoPassword.test(elPassword)){
                 console.log('malo');
@@ -133,7 +161,46 @@ $(document).ready(function(){
             $('.btn-crear').attr('href', 'pantalla5.html');
         }
     });
-     */    
+ 
+
+    /*EVENTO PARA CAPTURAR VALORES USUARIO DE PAGINA 4*/
+    $('.btn-crear').click(function(event) {
+        var name = $('#name').val();
+        localStorage.setItem('el-name', name);  
+        var email = $('#email').val();
+        localStorage.setItem('el-email', email); 
+        var password = $('#password').val();
+        localStorage.setItem('el-password', password);                     
+    });
+
+    var mostrarName = localStorage.getItem('el-name'); 
+    var mostrarEmail = localStorage.getItem('el-email'); 
+    var mostrarPassword = localStorage.getItem('el-password'); 
+
+    /*API REGISTRA NUM PAGINA 3*/
+    $.ajax({
+        url: 'api/createUser',
+        type: 'POST',
+        data: {
+            'phone' : mostrarPhone,
+            'name' : mostrarName,
+            'email' : mostrarEmail,
+            'password' : mostrarPassword,
+        },
+        user:{
+            'name' : mostrarName,
+            'email' : mostrarEmail,
+            'password' : mostrarPassword,            
+        }
+    })
+    .done(function(res){
+        console.log("success");
+        console.log(res);
+    })
+    .fail(function(res){
+        console.log("error");
+        console.log(res);
+    })       
 });
 
 
