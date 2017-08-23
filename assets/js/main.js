@@ -108,7 +108,6 @@ $(document).ready(function(){
         console.log(res);
     })
 
-
     /*VALIDAR CAMPOS PAG 4  */
     $('#form-user').validate({
         rules: {

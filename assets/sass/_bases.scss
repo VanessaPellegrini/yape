@@ -133,7 +133,7 @@
 	  font-weight: 500;
 	}
 	p{
-	  font-size:1.1em;
+	  font-size:1em;
 	  color: #8f8f8f;
 	}
 	.input-field{
@@ -144,6 +144,10 @@
 	.btn{
 	  color: white !important;
  	  font-weight: 600;
+ 	  background-color:#fbd43b;
+ 	  a{
+ 	  	color: #FFF;
+ 	  }
 	}
 }
 
@@ -253,38 +257,38 @@
 		width: 44%;
 	}
 	#smile{
-    width: 44%;
-    margin-left: 42%;
-}
-h4{
-	    margin-left: 156px;
-}
-a{
-#eye{
-	width: 18%;
-}
-p{
-	color:#00c3a3;
-}
-}
-.margin{
+	    width: 44%;
+	    margin-left: 42%;
+	}
+	h4{
+		    margin-left: 156px;
+	}
+	a{
+		#eye{
+			width: 18%;
+		}
+		p{
+		color:#00c3a3;
+		}
+	}
+	.margin{
 	    margin-left: 28%;
-}
-#movimientos{
-	    height: 57vh;
-	background-color:#38052a;
-	#flecha{
-		    margin-left: 53%;
 	}
-	h6{
-		    border-bottom: 1px solid whit
+	#movimientos{
+		height: 57vh;
+		background-color:#38052a;
+		#flecha{
+			margin-left: 53%;
+		}
+		h6{
+			border-bottom: 1px solid whit
+		}
+		.cactus{
+			width: 66%;
+		}
+		.enviar{
+			width: 40%;
+			margin-top: 40px;
+		}
 	}
-	.cactus{
-		width: 66%;
-	}
-	.enviar{
-		    width: 40%;
-		    margin-top: 40px;
-	}
-}
 }
