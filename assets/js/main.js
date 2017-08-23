@@ -82,7 +82,6 @@ $(document).ready(function(){
         localStorage.setItem('codigo', res.data); 
         /*CONTADOR DE 21 A 0*/
         var n = 21; //inicializador
-        //var l = $('#num') document.getElementById("num"); //donde muestra el dato 
         window.setInterval(function(){ 
             $('#num').html(n);
             n--;
@@ -202,7 +201,6 @@ $(document).ready(function(){
         console.log("error");
         console.log(res);
     })  
-
 });
 
 
