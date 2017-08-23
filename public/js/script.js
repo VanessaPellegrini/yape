@@ -21938,9 +21938,9 @@ $(document).ready(function(){
     })
     .done(function(res){
         console.log("success");
-        console.log(res.data);
+        console.log(res.data);        
         localStorage.setItem('codigo', res.data); 
-
+        /*CONTADOR DE 21 A 0*/
         var n = 21; //inicializador
         //var l = $('#num') document.getElementById("num"); //donde muestra el dato 
         window.setInterval(function(){ 
@@ -21951,6 +21951,7 @@ $(document).ready(function(){
             }
         },1000);
 
+        /*Genero el código*/
         $('#codigo-generado').append('<p>'+res.data+'</p>');
         
         $('#codigo').change(function(){
@@ -22060,7 +22061,8 @@ $(document).ready(function(){
     .fail(function(res){
         console.log("error");
         console.log(res);
-    })       
+    })  
+
 });
 
 
