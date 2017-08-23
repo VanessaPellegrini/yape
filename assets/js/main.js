@@ -8,7 +8,6 @@ $(document).ready(function(){
     }, 3000); 
     $('#el-carousel').css('height', '350px');
 
-
     /*VALIDAR CAMPOS PAG 2*/
     $('#formulario').validate({
         rules: {
@@ -24,8 +23,10 @@ $(document).ready(function(){
     $('#formulario input').on('keyup blur', function () {
         if ($('#formulario').valid()) {
         	var elPhone = $('#phone').val();
+            var validoPhone = /^[0-9]{9}$/
 
-        	if(elPhone.length != 9){
+            //elPhone.length != 9
+        	if(!validoPhone.test(elPhone)){
 				console.log('malo');
 				return false;
         	}else{
@@ -39,7 +40,6 @@ $(document).ready(function(){
         }
     });
 
-
     /*EVENTO PARA CAPTURAR VALOR DE PHONE*/
     $('.btn-continuar').click(function(event) {
         var phone = $('#phone').val();
@@ -49,8 +49,7 @@ $(document).ready(function(){
     var mostrarPhone = localStorage.getItem('el-phone'); 
     $('#number-phone').append('<p>'+mostrarPhone+'</p>')
 
-
-    /*API REGISTRA NUM*/
+    /*API REGISTRA NUM PAGINA 3*/
     $.ajax({
         url: 'api/registerNumber',
         type: 'POST',
@@ -83,18 +82,10 @@ $(document).ready(function(){
         localStorage.setItem('codigo', res.data); 
         $('#codigo-generado').append('<p>'+res.data+'</p>');
         
-        //setInterval($('#codigo-generado').append('<p>'+res.data+'</p>'), 3000);
-        /*
-        setTimeout(function(){ 
-            $('#codigo-generado').empty();
-            $('#codigo-generado').append('<p>'+res.data+'</p>'); 
-        }, 2100);
-        */
-
         $('#codigo').change(function(){
             if($('#codigo').val() == localStorage.getItem('codigo')){
                 console.log('ok');
-                $('#btn-creado').append('<a class="waves-effect waves-light btn" href="pantalla4.html">ok</a>')
+                $('#btn-creado').append('<a class="waves-effect waves-light btn" href="pantalla4.html">Lets go!</a>')
             }
             else{
                 alert('Ingrese número valido');
@@ -105,9 +96,44 @@ $(document).ready(function(){
         console.log("error");
         console.log(res);
     })
-    
 
+    /*VALIDAR CAMPOS PAG 4 
+    $('#form-user').validate({
+        rules: {
+            name: {
+                required: true
+            },
+            email: {
+                required: true,
+                email: true
+            }
+            password: {
+                required: true
+            }            
+        }
+    });
 
+    $('#form-user input').on('keyup blur', function () {
+        if ($('#form-user').valid()) {
+            var elName = $('#name').val();
+            var elEmail = $('#email').val();
+            var elPassword = $('#password').val();
+            var validoPassword = /^[0-9a-zA-Z]+$/;          
+
+            if(!validoPassword.test(elPassword)){
+                console.log('malo');
+                return false;
+            }else{
+                console.log('bueno');
+            }
+
+            $('button#crear-cuenta').prop('disabled', false);
+        } else {
+            $('button#crear-cuenta').prop('disabled', 'disabled');
+            $('.btn-crear').attr('href', 'pantalla5.html');
+        }
+    });
+     */    
 });
 
 
