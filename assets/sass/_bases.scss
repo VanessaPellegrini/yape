@@ -197,10 +197,13 @@
 					}
 				}
 				form{
-					a{
+					button{
 						background-color: $boton;
 						font-weight: bold;
 						margin-top: 50px;
+						a{
+							color: #FFF;
+						}
 					}
 					div{
 						i{
@@ -224,9 +227,12 @@
 				}
 			}
 			form{
-				a{
+				button{
 					background-color: $boton;
 					font-weight: bold;
+					a{
+						color: #FFF;
+					}
 				}
 				div{
 					div{
@@ -249,7 +255,7 @@
 	}
 }
 /*FIN PANTALLA 6*/
-
+/*PANTALLA 7*/
 #pantallasiete{
 	color:white;
 	background-color:#49233b;
